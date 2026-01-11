@@ -1,0 +1,58 @@
+body{
+
+    margin: 0px;
+    padding: 0px;
+}
+.card_parent
+{
+    display: flex;
+    height: 200px;
+    width: 90%;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 30px;
+    box-shadow:7px 4px 19px rgba(211, 15, 48, 0.25);
+;
+}
+#img
+{
+   padding: 20px;
+   
+}
+section > span{
+    color: gray;
+}
+#cut
+{
+    text-decoration: line-through;
+}
+.cost i {
+    margin-right: 30px; /* adds space between the two icons */
+}
+.fa-indian-rupee-sign
+{
+    color: green;
+}
+.cost span i 
+{
+    color: gray;
+}
+.fa-circle
+{
+    font-size: 20px;
+    margin-right: 20px;
+}
+.btn
+{
+    margin-left: 750px;
+    margin-bottom: 30px;
+   padding: 7px 50px  5px 30px;
+   width: 80px;
+   border-radius: 8px;
+   text-decoration: none;
+   border: 1px solid pink;
+   background-color: beige;
+   box-shadow:mediumvioletred;
+}
+
+

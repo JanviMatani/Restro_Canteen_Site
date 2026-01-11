@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="count">Loading...</h1>
+
+<script>
+let targetDate = new Date("Nov 18, 2025 03:05:00").getTime();
+
+let timer = setInterval(() => {
+
+  let now = new Date().getTime();
+  let diff = targetDate - now;
+
+  let days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+  let seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+  document.getElementById("count").innerHTML =
+    days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+  if (diff < 0) {
+    clearInterval(timer);
+    document.getElementById("count").innerHTML = "EXPIRED";
+  }
+
+}, 1000);
+</script>
+
+</body>
+</html>
